@@ -1,4 +1,8 @@
-This repo archives some proposed security fixes for Log4j 1.2 that were rejected upstream.
+This repo archives some proposed security fixes for Log4j 1.2 that were rejected upstream. It's superceded by [reload4j](https://reload4j.qos.ch/).
+
+# Please see reload4j
+
+[reload4j](https://reload4j.qos.ch/) ([git repo](https://github.com/qos-ch/reload4j)) by the original creator of Log4j 1.2 now has fixes for the same issues as those handled in this repository, and it has official releases. Best to evaluate it instead of this fork if you need a patched fork of Log4j 1.2.
 
 # What security fixes are needed in Log4j 1.2?
 
@@ -88,3 +92,5 @@ Existing usage of Log4j 1.2 of course also came under increased scrutiny, as sec
 This repository contains backwards-compatible fixes for Log4j 1.2.17 to fix the security vulnerabilities reported against it. Going further than the reported vulnerabilities, it disables some potentially unsafe code that isn't part of a CVE-reported vulnerability. It was proposed (PR [#16](https://github.com/apache/logging-log4j1/pull/16), [#17](https://github.com/apache/logging-log4j1/pull/17)) to the Apache Log4j team as basis for a security release as Log4j 1.2.18. The community discussed possibilities for such a release at length and reviewed several possible technical and communication approaches.
 
 On January 6, 2022, after significant deliberation and a vote, the Apache Log4J team decided not to produce a new security release for Log4j, see the [logging-log4j1 readme](https://github.com/apache/logging-log4j1/blob/main/README.md). The proposed security fixes in this repository will not be accepted or released by Apache.
+
+On January 12, 2022, the original author of Log4j 1.2 released Reload4j, a security-fix only fork of Log4j 1.2. It contains similar fixes to this repository and is supported by its author who also takes donations/sponsorship to do so sustaintably.
